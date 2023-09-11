@@ -58,6 +58,7 @@ mkdir ~/.config/environment.d
 cat > ~/.config/environment.d/envvars.conf <<EOF
 GDK_BACKEND=wayland
 MOZ_ENABLE_WAYLAND=1
+MOZ_USE_XINPUT2=1
 EOF
 
 # Give hint to what to install
