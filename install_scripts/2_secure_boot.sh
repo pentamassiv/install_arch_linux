@@ -29,6 +29,8 @@ EOF
 # The whitespaces next to amdgpu are important and need to be there
 cat > /etc/dracut.conf.d/my_flags.conf <<EOF
 force_drivers+=" amdgpu "
+omit_dracutmodules+=" network iscsi cifs nvmf "
+
 EOF
 
 # Add kernel parameter to disable the watchdog
